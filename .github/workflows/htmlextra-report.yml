@@ -15,7 +15,7 @@ jobs:
       - name: Install newman
         run: |
           npm install -g newman
-          nom install -g newman-reporter-htmlextra
+          npm install -g newman-reporter-htmlextra
 
       - name: Make dir for test resutls
         run: mkdir -p test_results
