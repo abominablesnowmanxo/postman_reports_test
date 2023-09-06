@@ -21,7 +21,7 @@ jobs:
         run: mkdir -p test_results
 
       - name: Run API Tests
-        run: newman run "Restful Booker BVT.postman_collection.json" -e Production.postman_environment.json -r htmlextra --reporter-htmlextra-export testResults/htmlreport.html
+        run: newman run RestfulBookerBVT.postman_collection.json -e Production.postman_environment.json -r htmlextra --reporter-htmlextra-export testResults/htmlreport.html
 
       - name: Output the run Details
         uses: actions/upload-artifact@v2
